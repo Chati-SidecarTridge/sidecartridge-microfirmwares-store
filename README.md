@@ -59,6 +59,13 @@ It fetches `<platform>/apps.json` from this site at page load and renders inside
 card opens its app through the store's `#<platform>/<uuid>` deep link. The snippet and live previews
 are at [`/widget/`](https://md-store.sidecartridge.com/widget/).
 
+## Cookies and analytics
+
+Every page uses the same cookie banner and Google Analytics property as sidecartridge.com, from
+`consent/`. Analytics only load after the visitor accepts them, and only when the page is served
+from a sidecartridge.com host, so nothing is sent to Google before consent. A choice made on
+either site applies to both. The banner is orestbida/cookieconsent v2.9.2 (MIT).
+
 ## Pulling an app from the catalog
 
 `blacklist/<platform>.json` withholds app `uuid`s from that platform's catalogs. Add an entry:

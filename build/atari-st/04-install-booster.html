@@ -27,6 +27,11 @@
 
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
   <script defer src="/build/guide.js?v=1.0"></script>
+  <!-- Cookie banner and Google Analytics, shared with sidecartridge.com (see /consent/consent.js) -->
+  <link rel="stylesheet" href="/consent/cookieconsent.css?v=1.0" />
+  <script defer src="/consent/cookieconsent.js?v=1.0"></script>
+  <script defer src="/consent/consent.js?v=1.0"></script>
+  <script type="text/plain" data-cookiecategory="analytics" data-src="/consent/analytics.js?v=1.0"></script>
 </head>
 
 <body class="browser-page" x-data="{ navMenuOpen: false }">
@@ -419,7 +424,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025-26 GOODDATA LABS SLU. All rights reserved.</p>
+    <p>&copy; 2025-26 GOODDATA LABS SLU. All rights reserved. &middot; <a href="#" data-cc="c-settings">Cookies</a></p>
   </footer>
 </body>
 
